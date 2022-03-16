@@ -1,0 +1,94 @@
+@use './colors.scss' as c;
+
+.mr-1 {
+    margin-right: 1em;
+}
+
+.max-width {
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: darkcyan;
+    border: 12px solid darkcyan;
+    padding: .75em;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: c.$primary;
+    border-color: c.$primary;
+}
+
+.btn-primary:focus {
+    background-color: c.$primary;
+    border-color: c.$primary;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 1;
+    align-items: center;
+}
+
+.input-row {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.input-row input {
+    height: 3em;
+    width: 100%;
+}
+
+.input-row button {
+    height: 3em;
+    width: 25%;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.header {
+    background-color: gray;
+    width: 100%;
+    height: 2em;
+    color: white;
+}
+
+.user-icon {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+
+.messaging-display {
+    margin-top: 1em;
+    border: .2em solid rgb(255, 255, 255);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    margin: 3em;
+    width: 50vh;
+    padding: 1em;
+}
+
+.message-content {
+    border-radius: 5%;
+    padding: 1em;
+    margin: .5em;
+    background-color: c.$message;
+    color: black;
+    font-size: 22px;
+}
+
+.message-info {
+    padding: 1em;
+}
